@@ -1,157 +1,260 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-    <title>Ian Haynes Website</title>
-    <meta name="generator" content="Jekyll v3.9.3" />
-    <meta property="og:title" content="Ian Haynes Website" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="description" content="A Bootstrap 4 start up project for Jekyll and Github Pages" />
-    <meta property="og:description" content="A Bootstrap 4 start up project for Jekyll and Github Pages" />
-    <link rel="canonical" href="http://localhost:4000/" />
-    <meta property="og:url" content="http://localhost:4000/" />
-    <meta property="og:site_name" content="Ian Haynes Website" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta property="twitter:title" content="Ian Haynes Website" />
-    <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A Bootstrap 4 start up project for Jekyll and Github Pages","headline":"Ian Haynes Website","name":"Ian Haynes Website","url":"http://localhost:4000/"}</script>
-    <!-- End Jekyll SEO tag -->
-    <link rel="stylesheet" href="/assets/main.css">
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml"
-        title="Ian Haynes Website" />
-    <script src="/assets/javascript/bootstrap/jquery.min.js"></script>
-    <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" rel="author" href="/">The Ian Haynes Website</a><button class="navbar-toggler"
-                type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/hayneian000/hayneian000.github.io">Fork me on
-                            Github</a>
-                    </li>
-                </ul>
+<!-- About Me Section -->
+<section id="about" class="card">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Placeholder for Profile Picture -->
+                <img src="assets/images/me.jpg" alt="Ian Haynes" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>I'm a Software Developer and a student at the University of Utah, majoring in Software
+                    Development. My anticipated graduation is in 2024, and I've been joyfully developing my
+                    skillset and learning how to create and improve software systems that solve real-world problems.</p>
+                <p>My passion for development began at a young age when I realized the power and potential of software
+                    in shaping our future. The thrill of bringing a concept to life through lines of code, the sense of
+                    achievement that comes from troubleshooting a persistent bug, and the gratification of seeing a
+                    project through to completion, all fuel my love for this field.</p>
+                <!-- ...additional paragraphs -->
+                <p>When I'm not engrossed in my studies or immersed in a coding project, you can usually find me
+                    outside. I have an innate love for nature and adventure that often draws me to the breathtaking
+                    landscapes of Utah. I spend my free time hiking, hunting, and skiing.</p>
+                <!-- ...additional hobbies and interests -->
             </div>
         </div>
-    </nav>
-    <div class="py-5">
-        <div class="container page-content">
-            <div>
-                <h1>My work</h1>
-                <h2>My apps: </h2>
-                <article>
-                    <h4>Mappa Mundi</h4>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="card">
+    <div class="container">
+        <h2>My Projects</h2>
+        <hr>
+        <section id="projects">
+            <!-- Mappa Mundi Project -->
+            <div class="project-item">
+                <div class="project-logo">
+                    <img src="assets/images/mappamundi-logo.jpeg" alt="Mappa Mundi Logo">
+                </div>
+                <div class="project-description">
+                    <h3>Mappa Mundi</h3>
                     <p>Mappa Mundi visualizes the past by placing historical events and buildings on a modern map. I
                         created
-                        Mappa Mundi in
-                        native applications for Android using Kotlin and IOS using Swift.</p>
-                    <ul>
-                        <li>
-                            <a href="https://play.google.com/store/apps/details?id=com.maps.mappa_mundi_mapbox">Android
-                                version on the Google Play Store</a>
-                        </li>
-                        <li>
-                            <a href="">IOS version Coming Soon!</a>
-                        </li>
-                    </ul>
-                </article>
-                <h2>My Experience: </h2>
+                        Mappa
+                        Mundi in native applications for Android using Kotlin and IOS using Swift.</p>
+                    <div class="project-links">
+                        <a href="https://apps.apple.com/us/app/mappa-mundi/id6451006755?platform=iphone">iOS App</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.maps.mappa_mundi_mapbox&pli=1">Android
+                            App</a>
+                        <a href="https://mappamundi.us/">Website</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="assets/images/mappamundi-screenshot.jpg" alt="Mappa Mundi Screenshot">
+                    <img src="assets/images/mappamundi-screenshot2.jpg" alt="Mappa Mundi Screenshot">
+                </div>
+            </div>
+            <!-- Today in Music Project -->
+            <div class="project-item">
+                <div class="project-logo">
+                    <img src="assets/images/today-in-music-logo.png" alt="Today in Music Logo">
+                </div>
+                <div class="project-description">
+                    <h3>Today in Music</h3>
+                    <p>Today in Music connects music enthusiasts with the soundtrack of history by presenting songs that
+                        were
+                        released on this day in history. I believe every song has a
+                        story, and Today in Music is here to bring that story to you, along with instant access to
+                        listen to it on
+                        your favorite streaming
+                        platform.</p>
+                    <div class="project-links">
+                        <a href="https://today-in-music.com/">Website</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="assets/images/today-in-music-screenshot2.jpeg" alt="Today in Music Screenshot">
+                    <img src="assets/images/today-in-music-screenshot.jpeg" alt="Today in Music Screenshot">
+                </div>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+<!-- Career Section -->
+<section id="career" class="card">
+    <div class="container">
+        <h2>My Career</h2>
+        <hr>
+        <!-- Current Position -->
+        <div class="career-item">
+            <h3>Maverik (Current Position)</h3>
+            <p>Since joining Maverik Inc in 2021 as a Software Engineer and previously as a Software Developer Intern, I
+                have played a
+                pivotal role in both the design and implementation phases of various critical projects. My most notable
+                contribution has
+                been leading the development of the Kitchen Production System (KPS) User Interface. This innovative
+                forecasting system
+                has significantly boosted revenue by 20% and simultaneously reduced waste by accurately predicting the
+                demand for
+                kitchen products across Maverik stores.</p>
+            <p>In addition to this, I have developed proprietary software applications focused on logistics and big
+                data. These
+                applications, crafted using my expertise in Angular, Spring Boot, and Java, have been instrumental in
+                streamlining fuel
+                logistics and other business processes, thereby effectively reducing operational costs.</p>
+            <p>My responsibilities also extended to creating high-performance Spring Boot Java applications. These were
+                crucial for
+                facilitating seamless data transfer between web applications and third-party software providers. This
+                involved
+                integrating Cron jobs, API gateways, and SQL to ensure efficient and reliable data handling.</p>
+            <p>
+                During my tenure as a Software Developer Intern in the same year, I was actively involved in
+                implementing automated
+                testing for Spring Boot applications using Mockito. This initiative played a key role in enhancing the
+                robustness and
+                reliability of our software offerings. Additionally, I engaged in the unit testing of Java and Spring
+                Boot applications,
+                where I diligently rectified errors and malfunctions within the production code, further ensuring the
+                high quality of
+                our software products.
+            </p>
+        </div>
+
+        <!-- Previous Position -->
+        <div class="career-item">
+            <h3>Ravn</h3>
+            <p>During my high school years, I had the opportunity to intern at Ravn, where I undertook a challenging and
+                rewarding
+                project. My primary responsibility was to create an onboarding application specifically designed for
+                business owners.
+                This project allowed me to hone my skills in various technologies, including Rails, Ruby, TypeScript,
+                and React,
+                showcasing my ability to work with a diverse range of programming languages and frameworks.</p>
+        </div>
+
+        <!-- Education -->
+        <div class="career-item">
+            <h3>University of Utah</h3>
+            <p>At the University of Utah, I am currently pursuing a Bachelor of Science degree in Software Development,
+                with an
+                anticipated graduation date in 2024. I currently hold a 3.6 GPA and have been awarded the Flagship
+                Scholarship.
+                This scholarship is a testament to my hard work and potential in the field of software development.</p>
+
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+<br>
+
+
+<!-- <div class="py-5">
+    <div class="container page-content">
+        <section class="section">
+            <header class="section-header">
+                <h1>My Apps</h1>
+            </header>
+            <article>
+                <img src="path-to-your-image.jpg" alt="Mappa Mundi">
+                <h4>Mappa Mundi</h4>
+                <p>Mappa Mundi visualizes the past by placing historical events and buildings on a modern map. I
+                    created
+                    Mappa Mundi in
+                    native applications for Android using Kotlin and IOS using Swift.</p>
+                <ul>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.maps.mappa_mundi_mapbox">Android
+                            version on the Google Play Store</a>
+                    </li>
+                    <li>
+                        <a href="">IOS version Coming Soon!</a>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h4>Today in Music (in progress)</h4>
+                <p>Today in Music bring the music that was relased on this day to users.</p>
+                <ul>
+                    <li>
+                        <a href="https://today-in-music.com">Website</a>
+                    </li>
+                    <li>
+                        <a href="">IOS version Coming Soon!</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section">
+            <header class="section-header">
+                <h1>My Career</h1>
+            </header>
+            <article>
                 <h4>Maverik (Current Position)</h4>
                 <ul>
                     <li> Working with logistics and food service teams to reduce costs and optimize processes by
                         creating proprietary logistics
                         and big data software applications.(Agile, Git, Jira, Scrum)</li>
-                    <li> Creating user focused web applications through iterative feedback from employee users. (Angular, TypeScript)
+                    <li> Creating user focused web applications through iterative feedback from employee users.
+                        (Angular,
+                        TypeScript)
                     </li>
-                    <li> Developing micro-service applications that transferred data to and from web applications and
+                    <li> Developing micro-service applications that transferred data to and from web applications
+                        and
                         third-party software
                         providers with efficiency (Cron, Springboot, Java, SQL, API Gateways, Mockito)</li>
                 </ul>
+            </article>
+            <article>
                 <h4>Ravn</h4>
                 <ul>
-                    <li> Created an onboarding application for the owners of the business. (Rails, Ruby, TypeScript, React)</li>
+                    <li> Created an onboarding application for the owners of the business. (Rails, Ruby, TypeScript,
+                        React)
+                    </li>
                     <li> Familiarized myself with Agile development and Git.</li>
                 </ul>
-                <h3>About Me: </h3>
-                <p>I'm a Software Developer and a proud student at the University of Utah, majoring in both Software
-                    Development and
-                    History. My anticipated graduation is in 2024, and I've been joyfully developing my skillset and
-                    learning how to create
-                    and improve software systems that solve real-world problems.</p>
-                <p>My passion for development began at a young age when I realized the power and potential of software
-                    in shaping our
-                    future. The thrill of bringing a concept to life through lines of code, the sense of achievement
-                    that comes from
-                    troubleshooting a persistent bug, and the gratification of seeing a project through to completion,
-                    all fuel my love for
-                    this field.</p>
-                <p>I deeply value the intersection of technology and humanities, which is why I chose to also major in
-                    history. The past
-                    informs the present, and by understanding the evolution of societies, technologies, and ideas, I aim
-                    to build software
-                    solutions that are not only technologically advanced but are also able to navigate societal nuances.
-                </p>
-                <p>When I'm not engrossed in my studies or immersed in a coding project, you can usually find me
-                    outside. I have an innate
-                    love for nature and adventure that often draws me to the breathtaking landscapes of Utah. I spend my
-                    free time hiking,
-                    hunting, and woodworking, and I find these activities to be both meditative and rewarding. Each of
-                    these hobbies
-                    requires precision, patience, and an understanding of the natural world, much like software
-                    development.</p>
-                <p>I'm also passionate about physical health and fitness, with weightlifting being one of my favorite
-                    forms of exercise.
-                    The discipline and rigor required to progress in weightlifting translate well into my approach to
-                    software development.
-                    The continuous pursuit of self-improvement, the focus on achieving specific goals, and the
-                    resilience needed to overcome
-                    challenges are attributes I carry from the gym to the keyboard.</p>
-            </div>
-        </div>
-    </div>
-    <div class="py-5 border-top">
-        <div class="container">
-
-            <p class="h5 mb-3">Ian Haynes</p>
-
-            <div class="row">
-
-                <div class="col-sm">
-                    <ul class="list-unstyled">
-                        <li>Socials/Contact</li>
-                        <li>
-                            <a href="mailto: ianhaynes.inh@gmail.com">ianhaynes.inh@gmail.com</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/ian-haynes">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="col-sm text-right">
-                    <p>A Bootstrap 4 start up project for Jekyll and Github Pages</p>
-                    <p>
-                        <a href="https://github.com/hayneian000/hayneian000.github.io"><img alt="GitHub Repo stars"
-                                src="https://img.shields.io/github/stars/hayneian000/hayneian000.github.io?style=social"></a>
-                    <p>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</body>
-
-</html>
+            </article>
+        </section>
+    </div> -->
+<!-- <h3>About Me: </h3>
+    <p>I'm a Software Developer and a proud student at the University of Utah, majoring in both Software
+        Development and
+        History. My anticipated graduation is in 2024, and I've been joyfully developing my skillset and
+        learning how to create
+        and improve software systems that solve real-world problems.</p>
+    <p>My passion for development began at a young age when I realized the power and potential of software
+        in shaping our
+        future. The thrill of bringing a concept to life through lines of code, the sense of achievement
+        that comes from
+        troubleshooting a persistent bug, and the gratification of seeing a project through to completion,
+        all fuel my love for
+        this field.</p>
+    <p>I deeply value the intersection of technology and humanities, which is why I chose to also major in
+        history. The past
+        informs the present, and by understanding the evolution of societies, technologies, and ideas, I aim
+        to build software
+        solutions that are not only technologically advanced but are also able to navigate societal nuances.
+    </p>
+    <p>When I'm not engrossed in my studies or immersed in a coding project, you can usually find me
+        outside. I have an innate
+        love for nature and adventure that often draws me to the breathtaking landscapes of Utah. I spend my
+        free time hiking,
+        hunting, and woodworking, and I find these activities to be both meditative and rewarding. Each of
+        these hobbies
+        requires precision, patience, and an understanding of the natural world, much like software
+        development.</p>
+    <p>I'm also passionate about physical health and fitness, with weightlifting being one of my favorite
+        forms of exercise.
+        The discipline and rigor required to progress in weightlifting translate well into my approach to
+        software development.
+        The continuous pursuit of self-improvement, the focus on achieving specific goals, and the
+        resilience needed to overcome
+        challenges are attributes I carry from the gym to the keyboard.</p> -->
+</div>

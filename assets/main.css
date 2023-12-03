@@ -1,0 +1,132 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #283618;
+}
+
+header {
+    background-color: #606C38;
+    color: #FEFAE0;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FEFAE0;
+}
+
+footer {
+    background-color: #283618;
+    color: #FEFAE0;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #FEFAE0;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.ml-2 {
+    margin-left: 8px;
+}
+
+
+
+/*Project stuff*/
+
+
+
+.project-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* Aligns items to the top */
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #FEFAE0;
+    /* Based on your color palette */
+    padding: 20px;
+    border-radius: 8px;
+    /* Optional: for rounded corners */
+}
+
+.project-item .project-description,
+.project-item .project-links {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    /* Ensures the text does not get too squeezed */
+}
+
+.project-item .project-image {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    /* Centers the image horizontally */
+}
+
+.project-image img {
+    max-width: 100%;
+    /* Ensures the image is no wider than its container */
+    max-height: 300px;
+    /* Sets a maximum height for the image */
+    margin: 10px;
+    height: auto;
+    /* Ensures the height scales proportionally */
+    width: auto;
+    /* Ensures the width scales proportionally */
+    display: block;
+    /* Removes bottom space under image */
+}
+
+.project-logo img {
+    max-width: 100px;
+    /* Adjust this value as needed */
+    height: auto;
+    display: block;
+    /* Removes bottom space under image */
+}
+
+.project-links a {
+    color: #BC6C25;
+    /* Based on your color palette */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hide the logo on mobile screens */
+@media (max-width: 768px) {
+    .project-logo {
+        display: none;
+    }
+
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-image {
+        max-width: 300px;
+        /* Adjust this value for smaller screens */
+        margin: 0 auto;
+        /* Center images on small screens */
+    }
+}
